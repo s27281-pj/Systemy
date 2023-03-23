@@ -1,0 +1,4 @@
+Przygotuj wyrażenie regularne sprawdzające czy tekst jest kodem pocztowym
+(cały tekst, czyli zaczyna się od cyfry i kończy się cyfrą). Sprawdź czy działa.
+
+sed -n '/^[[:digit:]].*[[:digit:]]$/ { /^[[:digit:]]\{2\}-[[:digit:]]\{3\}/p }' kody.txt

@@ -1,0 +1,6 @@
+Nie do końca rozumiem, w którym miejscu znajduje się tutaj błąd. Wyrażenie nie potrafi poprawnie zweryfikowac czy poprawnie wprowadzono domenę.
+s27281@szuflandia22:~/SOP_ZADANIA/zjazd2$ cat zadanie2.txt
+Przygotuj wyrażenie regularne sprawdzające e-mail i zastosuj je do wykasowania
+wszystkich adresów e-mail w podanym pliku.
+
+sed -n '/[[:alnum:]][@]\{1\}[[:alpha:]].*[[:alpha:]]$/ d' maile.txt
